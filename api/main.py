@@ -47,11 +47,11 @@ async def script_types(
     description="Look up and format reverse shell scripts by name.")
 async def rev_scripts(
     script_name: enums.create_script_name_enum('rev')=params.script_name,
-    raw: bool=params.raw,
-    shell: enums.Shell=params.shell,
     host: str=params.host,
     port: str=params.port,
+    shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
+    raw: bool=params.raw,
     db: Session=Depends(get_db)
 ):
     script = crud.get_scripts(db, type_='rev', script_name=script_name)
@@ -67,10 +67,10 @@ async def rev_scripts(
     description="Look up and format bind shell scripts by name.")
 async def bind_scripts(
     script_name: enums.create_script_name_enum('bind')=params.script_name,
-    raw: bool=params.raw,
-    shell: enums.Shell=params.shell,
     port: str=params.port,
+    shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
+    raw: bool=params.raw,
     db: Session=Depends(get_db)
 ):
     script = crud.get_scripts(db, type_='bind', script_name=script_name)
@@ -86,11 +86,11 @@ async def bind_scripts(
     description="Look up and format msf venom shell scripts by name.")
 async def msf_scripts(
     script_name: enums.create_script_name_enum('msf_venom')=params.script_name,
-    raw: bool=params.raw,
-    shell: enums.Shell=params.shell,
     host: str=params.host,
     port: str=params.port,
+    shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
+    raw: bool=params.raw,
     db: Session=Depends(get_db)
 ):
     script = crud.get_scripts(db, type_='msf_venom', script_name=script_name)
@@ -106,10 +106,10 @@ async def msf_scripts(
     description="Look up and format listener scripts by name.")
 async def listener_scripts(
     script_name: enums.create_script_name_enum('listener')=params.script_name,
-    raw: bool=params.raw,
     port: int=params.port,
-    db: Session=Depends(get_db),
     encoding: enums.Encoding=params.encoding,
+    raw: bool=params.raw,
+    db: Session=Depends(get_db),
 ):
     script = crud.get_scripts(db, type_='listener', script_name=script_name)
     if not script:
