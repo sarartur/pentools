@@ -1,11 +1,11 @@
 from fastapi import Depends, FastAPI, HTTPException
 from sqlalchemy.orm import Session
 from fastapi.responses import PlainTextResponse
-from typing import List, Optional
+from typing import List
 
 from . import (
     models, schemas, crud, enums, 
-    params, formating, utils
+    params, formating
 )
 from .database import SessionLocal, engine
 
