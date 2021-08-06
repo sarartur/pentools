@@ -1,0 +1,22 @@
+import sys
+import load_db.main as ldb
+
+
+def main(argv):
+    cmd_0_args = {'create', 'delete'}
+    cmd_1_args = {'all', 'rev', 'bind', 'listeners'}
+    try: cmd_0 = argv[1].strip(); assert(cmd_0 in cmd_0_args)
+    except: raise Exception(f'Must supply positional argument 1. Options: {cmd_0_args}')
+    if cmd_0 == 'create':
+        cmd_1_args = {'all', 'rev', 'bind', 'listeners'}
+        try: cmd_1 = argv[2]; assert(cmd_1 in cmd_1_args)
+        except: raise Exception(f'Must supply positional argument 2. Options: {cmd_1_args}')
+        if cmd_1 == 'all':
+            ldb.create_all()
+        else:
+            ldb.create_shells(cmd_1)
+    if cmd_0 == 'delete':
+        ldb.delete_db()
+
+if __name__ == '__main__':
+    sys.exit(main(sys.argv))
