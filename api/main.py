@@ -15,7 +15,16 @@ app = FastAPI(
     title="Pen Tools API", 
     description="Pen Tools API delivers fast and reliable tools for every day pen testing.", 
     version="0.0.4",
-    docs_url=None, redoc_url="/docs"
+    docs_url=None, redoc_url="/docs",
+    contact={
+        "name": "Artur Saradzhyan",
+        "url": "https://github.com/sarartur",
+        "email": "sarartur.ruk@gmail.com",
+    },
+    license_info={
+        'name': 'MIT License',
+        'url': 'https://github.com/sarartur/api.pentools.io/blob/master/LICENSE.txt'
+    }
 )
 
 def get_db():
