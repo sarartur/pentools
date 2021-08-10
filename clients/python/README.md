@@ -41,7 +41,7 @@ Available scripts and types
         ...
 ```
 
-Retrieve and format a specific script based on id.
+Retrieve and format a specific script by id.
 
 ```
 pentools script -i 1 -ho example.ip -p 12345 -s bin/bash
