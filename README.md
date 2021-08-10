@@ -5,3 +5,6 @@ Pen Tools API delivers fast and reliable tools for every day pen testing.
 
 ### CLI Client
 - [python](https://github.com/sarartur/pentools/tree/master/clients/python)
+
+### Contact
+* Email me at <sarartur.ruk@gmail.com> or open a new [Issue](https://github.com/sarartur/pentools/issues) on Github.
