@@ -4,4 +4,4 @@ Pen Tools API delivers fast and reliable tools for every day pen testing.
 - [license](https://github.com/sarartur/pentools/blob/master/LICENSE.txt)
 
 ### CLI Client
-- [python](https://github.com/sarartur/pentools/clients/python)
+- [python](https://github.com/sarartur/pentools/tree/master/clients/python)

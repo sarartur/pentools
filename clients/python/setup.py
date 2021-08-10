@@ -11,7 +11,7 @@ setuptools.setup(
     description="Consumes Pen Test API",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/sarartur/pentools/clients/python",
+    url="https://github.com/sarartur/pentools/tree/master/clients/python",
     packages=setuptools.find_packages(),
     entry_points = {
         'console_scripts': [
