@@ -8,7 +8,7 @@ setuptools.setup(
     version="0.0.1",
     author="Artur Saradzhyan",
     author_email="sartur.ruk@gmail.com",
-    description="Consumes Pen Test API",
+    description="CLI for Pen Tools API",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/sarartur/pentools/tree/master/clients/python",
