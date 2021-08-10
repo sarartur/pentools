@@ -16,6 +16,7 @@ script_type = Path(...,
 script_id = Query(None,
     title="Script id",
     description="The id of the script.",
+    min=1,
     example=1
 )
 raw = Query(False,

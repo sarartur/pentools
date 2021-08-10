@@ -1,4 +1,7 @@
 ## Pen Tools API
 Pen Tools API delivers fast and reliable tools for every day pen testing.
 - [documentation](https://pentools.herokuapp.com/docs)
-- [license](https://github.com/sarartur/api.pentools.io/blob/master/LICENSE.txt)
+- [license](https://github.com/sarartur/pentools/blob/master/LICENSE.txt)
+
+### CLI Client
+- [python](https://pypi.org/project/pentools)

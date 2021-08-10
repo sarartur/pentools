@@ -48,7 +48,7 @@ async def script_types(
 async def rev_scripts(
     script_name: enums.create_script_name_enum('rev')=params.script_name,
     host: str=params.host,
-    port: str=params.port,
+    port: int=params.port,
     shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
     raw: bool=params.raw,
@@ -67,7 +67,7 @@ async def rev_scripts(
     description="Look up and format bind shell scripts by name.")
 async def bind_scripts(
     script_name: enums.create_script_name_enum('bind')=params.script_name,
-    port: str=params.port,
+    port: int=params.port,
     shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
     raw: bool=params.raw,
@@ -87,7 +87,7 @@ async def bind_scripts(
 async def msf_scripts(
     script_name: enums.create_script_name_enum('msf_venom')=params.script_name,
     host: str=params.host,
-    port: str=params.port,
+    port: int=params.port,
     shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
     raw: bool=params.raw,
@@ -126,7 +126,7 @@ async def listener_scripts(
 async def scripts(
     id: int=params.script_id,
     host: str=params.host,
-    port: str=params.port,
+    port: int=params.port,
     shell: enums.Shell=params.shell,
     encoding: enums.Encoding=params.encoding,
     os: enums.create_os_enum()=params.os,

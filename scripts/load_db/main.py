@@ -20,10 +20,10 @@ models.Base.metadata.create_all(bind=engine)
 db = SessionLocal()
 
 description_mapping = {
-    'rev': 'Shell session established on a connection that is initiated from a remote machine.',
-    'bind': 'Shell session set up on the target host and binds to a specific port to listens for an incoming connection from the attack box.',
-    'msf_venom': 'Used to generate and output all of the various types of shell code that are available in Metasploit.',
-    'listener': 'Used to catch the incoming connect from a reverse shell'
+    'rev': 'Shell in which the target machine communicates back to the attacking machine.',
+    'bind': 'Shell in which the target machine opens up a communication port or a listener on the victim machine and waits for an incoming connection.',
+    'msf_venom': 'Shell code that is available in Metasploit.',
+    'listener': 'Catches the incoming connection from a reverse shell.'
 }
 
 def create_scripts(script_type_name):

@@ -1,0 +1,2 @@
+class PenToolsException(Exception):
+    pass
