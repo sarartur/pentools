@@ -8,11 +8,11 @@ Install latest version from [PyPI](https://pypi.org/project/pentools/): ```pip i
 ### Resources
 [API documentation](https://pentools.herokuapp.com/docs)
 ### Usage
-Below are some examples of the usage.
-#### pentools list
 Retrieve the list of scripts based on specified category (leave blank to see all).
 
-```pentools list```
+```
+pentools list
+```
 output:
 ```
 Available types
@@ -41,10 +41,11 @@ Available scripts and types
         ...
 ```
 
-#### pentool script
 Retrieve and format a specific script based on id.
 
-```pentools script -i 1 -ho example.ip -p 12345 -s bin/bash```
+```
+pentools script -i 1 -ho example.ip -p 12345 -s bin/bash
+```
 output:
 ```
 ---------------(code)---------------
