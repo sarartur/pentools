@@ -23,7 +23,7 @@ app = FastAPI(
     },
     license_info={
         'name': 'MIT License',
-        'url': 'https://github.com/sarartur/api.pentools.io/blob/master/LICENSE.txt'
+        'url': 'https://github.com/sarartur/pentools/blob/master/LICENSE.txt'
     }
 )
 
