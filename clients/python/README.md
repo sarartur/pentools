@@ -13,7 +13,7 @@ Retrieve the list of scripts based on specified category (leave blank to see all
 ```
 pentools list
 ```
-output:
+*output:*
 ```
 Available types
 
@@ -28,7 +28,7 @@ Add the ```-f``` flag to see available scripts.
 ```
 pentools list rev  -f
 ```
-output:
+*output:*
 ```
 Available scripts and types
 
@@ -46,7 +46,7 @@ Retrieve and format a specific script based on id.
 ```
 pentools script -i 1 -ho example.ip -p 12345 -s bin/bash
 ```
-output:
+*output:*
 ```
 ---------------(code)---------------
 
